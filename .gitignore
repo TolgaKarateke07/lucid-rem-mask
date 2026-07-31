@@ -1,0 +1,20 @@
+# Build output
+build/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.o
+*.d
+
+# Editor
+.vscode/
+__pycache__/
+*.pyc
+
+# Captured telemetry
+*.csv
+
+# EasyEDA
+*.epro

@@ -1,0 +1,22 @@
+# Host-side test. This does NOT build anything for the board -- it runs the
+# detector on your PC so the algorithm can be tuned without flashing.
+#
+#   make test     build and run
+#   make clean
+
+CC      ?= cc
+CFLAGS  := -Wall -Wextra -std=c11 -O2 -I../Core/Inc
+LDLIBS  := -lm
+
+all: test_rem_detect
+
+test_rem_detect: test_rem_detect.c ../Core/Src/rem_detect.c
+	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
+
+test: test_rem_detect
+	@./test_rem_detect
+
+clean:
+	rm -f test_rem_detect
+
+.PHONY: all test clean
