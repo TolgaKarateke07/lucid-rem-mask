@@ -6,10 +6,11 @@ inside your dream and realise you're dreaming (lucid dreaming).
 
 STM32F103C8T6 (Blue Pill), STM32Cube HAL, built with `arm-none-eabi-gcc`.
 
-**Current status:** firmware is written and tested on a PC, schematic is done.
-I haven't built the hardware yet, so the detection thresholds are still based
-on simulated signals rather than real recordings. See
-[What's not done](#whats-not-done).
+**Current status:** the circuit is built on a breadboard and the detection
+approach was validated on an Arduino prototype — it works. The STM32 firmware
+here is written and tested on a PC but has not been run on the hardware yet,
+so its thresholds still come from simulated signals rather than real
+recordings. See [What's not done](#whats-not-done).
 
 ## How it works
 
@@ -264,9 +265,11 @@ to a few seconds, otherwise nothing happens for 90 minutes.
 
 ## What's not done
 
-- I haven't built the circuit yet, so none of this has run on real hardware.
+- The STM32 build hasn't run on the hardware yet. The circuit exists and the
+  detection works on an Arduino prototype, but this firmware has only been
+  tested in simulation.
 - The thresholds come from simulated signals. They're reasonable starting
-  points but they'll need adjusting once I have real recordings.
+  points but they'll need adjusting once I have real recordings from the board.
 - No PCB.
 - No power saving. It should sleep between samples so it can run all night on
   a small battery.
