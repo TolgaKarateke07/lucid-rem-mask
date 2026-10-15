@@ -148,9 +148,9 @@ through small cross cuts so they point at the eyelid, with a red cue LED in
 each cup. The Uno sits on the nightstand and an ethernet cable carries the
 seven signals to the mask.
 
-![Arduino prototype 1](docs/arduinotest1.jpg)
+![Arduino prototype 1](docs/arduinotest1.jpeg)
 
-![Arduino prototype 2](docs/arduinotest2.jpg)
+![Arduino prototype 2](docs/arduinotest2.jpeg)
 
 ## Code
 
