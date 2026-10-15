@@ -139,6 +139,19 @@ split across both sides of its symbol.
 
 No PCB yet, this is meant for a breadboard.
 
+## Arduino prototype
+
+Before running the STM32 build on hardware, I put the same detection approach
+on an Arduino Uno to check that the sensing actually works on a real eye. The
+IR LED and phototransistor sit in one eye cup of a 3D sleep mask, pushed in
+through small cross cuts so they point at the eyelid, with a red cue LED in
+each cup. The Uno sits on the nightstand and an ethernet cable carries the
+seven signals to the mask.
+
+![Arduino prototype 1](docs/arduinotest1.jpg)
+
+![Arduino prototype 2](docs/arduinotest2.jpg)
+
 ## Code
 
 | File | What it does | Lines |
